@@ -1,0 +1,13 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/farms": "pages/farms.html",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.html",
+  "/liquidity/add": "pages/liquidity/add.html",
+  "/liquidity": "pages/liquidity.html",
+  "/pools": "pages/pools.html",
+  "/nfts": "pages/nfts.html",
+  "/swap": "pages/swap.html",
+  "/404": "pages/404.html"
+}
