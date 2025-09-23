@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { Layout } from "@src/layouts";
-import { ComingSoonPage } from "@src/layouts/ComingSoonPage";
+import { Layout } from "../layouts";
+import { ComingSoonPage } from "../layouts/ComingSoonPage";
 import { Meta } from "@src/containers/Meta";
 import { Box } from "@chakra-ui/react";
 import { Typography } from "@src/components/Typography";

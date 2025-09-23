@@ -31,7 +31,6 @@ import React, {
 } from "react";
 import BigNumber from "bignumber.js";
 import useSWR from "swr";
-import { useAccount } from "wagmi";
 import {
   SwitchIcon,
   RotateSwitchIcon,

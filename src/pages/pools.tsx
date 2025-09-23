@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { Meta } from "@src/containers/Meta";
 import Pools from "@src/containers/PoolPage";
-import { Layout } from "@src/layouts";
+import { Layout } from "../layouts";
 import { ReactNode } from "react";
 
 const Pool = () => {

@@ -8,9 +8,9 @@ import Roadmap from "./Roadmap";
 import TeamMember from "./TeamMember";
 import Tokenomics from "./Tokenomics";
 import OurPartner from "./OutPartner";
-
-
+console.log("Homepage => out")
 const HomePage: React.FC = () => {
+  console.log("Homepage => in");
   return (
     <Flex direction={"column"} position={"relative"}>
       <IncomeSolution />

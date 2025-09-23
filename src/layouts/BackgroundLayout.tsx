@@ -1,7 +1,9 @@
 // import Image from "next/image";
 import { Image } from "@chakra-ui/react";
 
+console.log("backgroundlayout => out")
 const BackgroundLayout = () => {
+  console.log("backgroundlayout => in")
   return (
     <>
       <Image

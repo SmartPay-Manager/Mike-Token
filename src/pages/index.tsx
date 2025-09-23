@@ -8,13 +8,15 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Index = () => {
   return (
-    <div className={inter.className}>
-      <HomePage />
-      <BackgroundLayout />
-    </div>
+    <Layout>
+      {/* <div className={inter.className}>
+        <HomePage />
+        <BackgroundLayout />
+      </div> */}
+    </Layout>
   );
 };
 
-Index.getLayout = (page: ReactNode) => <Layout>{page}</Layout>;
+// Index.getLayout = (page: ReactNode) => <Layout>{page}</Layout>;
 
 export default Index;

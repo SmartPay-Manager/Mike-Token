@@ -1,10 +1,10 @@
 import { Box, Flex } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useRouter } from "next/router.js";
+import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 import type { FC, ReactNode } from "react";
-import { Footer } from "./Footer.tsx";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 // const TopNav = dynamic(() => import("./top-nav"));
 
@@ -12,7 +12,12 @@ interface LayoutProps {
   children?: ReactNode;
 }
 
+  console.log("Layout => out");
+
 export const Layout: FC<LayoutProps> = (props) => {
+  
+  console.log("Layout => in");
+
   const { children } = props;
   const router = useRouter();
 

@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import { Layout } from "@src/layouts";
+import { Layout } from "../layouts";
 import { Meta } from "@src/containers/Meta";
 import AddLiquidity from "@src/containers/Liquidity/AddLiquidity";
-import { ComingSoonPage } from "@src/layouts/ComingSoonPage";
+import { ComingSoonPage } from "../layouts/ComingSoonPage";
 
 const AddLiquidityPage = () => {
   return (

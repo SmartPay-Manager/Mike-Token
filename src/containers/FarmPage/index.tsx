@@ -22,7 +22,6 @@ import React, {
   useState,
 } from "react";
 import useSWR from "swr";
-import { useAccount, useSigner } from "wagmi";
 import Countdown from "react-countdown";
 // import {
 //   getRemoteConfig,
@@ -373,8 +372,6 @@ const CardPoolClassic: React.FC<{
   isFinished: boolean;
 }> = ({ isFinished }) => {
   const [isApproved, setIsPendingApproved] = useState(false);
-  const { address: account } = useAccount();
-  const { data: signer } = useSigner();
   const [isPendingApprover, setIsPendingApprover] = useState(false);
 
   const renderButton = () => {

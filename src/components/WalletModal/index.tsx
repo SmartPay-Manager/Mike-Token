@@ -13,7 +13,6 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { isMobile } from "react-device-detect";
-import { useSwitchNetwork } from "wagmi";
 
 
 
@@ -26,7 +25,6 @@ const WalletModal: React.FC<IWalletModal> = ({
   isOpen = true,
   onDismiss = () => null,
 }) => {
-  const { switchNetwork } = useSwitchNetwork();
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (

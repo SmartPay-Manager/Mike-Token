@@ -22,9 +22,6 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import useSWR from "swr";
-import { useAccount, useSigner } from "wagmi";
-import Countdown from "react-countdown";
 // import {
 //   getRemoteConfig,
 //   fetchAndActivate,
