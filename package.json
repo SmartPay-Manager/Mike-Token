@@ -78,8 +78,5 @@
   "devDependencies": {
     "@types/numeral": "^2.0.2",
     "@types/react-virtualized": "^9.21.22"
-  },
-  "engines": {
-    "node": "18.x"
   }
 }
