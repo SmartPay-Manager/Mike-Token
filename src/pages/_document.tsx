@@ -1,3 +1,4 @@
+import { AppConfig } from "@src/utils/AppConfig";
 import Document, { Head, Html, Main, NextScript, DocumentInitialProps, DocumentContext } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
@@ -23,7 +24,7 @@ class MyDocument extends Document {
   // eslint-disable-next-line class-methods-use-this
   render() {
     return (
-      <Html>
+      <Html lang={AppConfig.locale}>
         <Head />
         <body>
           <Main />
