@@ -22,7 +22,7 @@ export const Layout: FC<LayoutProps> = (props) => {
   const router = useRouter();
 
   return (
-    <Flex justifyContent={"space-between"} flexDirection={"column"} className="bg-default h-full relative z-9 min-h-[100vh]">
+    <Flex justify="space-between" direction="column" className="bg-default h-full relative z-9 min-h-[100vh]">
       <Flex direction="column" hidden={router?.asPath !== "/"}>
         <Image
           src="/images/left.png"

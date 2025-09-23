@@ -20,18 +20,13 @@ import { redirect } from "@src/containers/HomePage/Community";
 import { Typography } from "@src/components/Typography";
 import { PriceMkt } from "./PriceMkt";
 export const Header = () => {
-  const [currentWallet, setCurrentWallet] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   return (
     <>
       <Flex
         sx={{
-          // maxW: "1200px",
           mx: "auto",
-          // borderRadius: "8px",
-          // border: "1px solid #1ED760",
-          // boxShadow: "0px 8px 25px 0px rgba(0, 0, 0, 0.50)",
           borderBottom: "1px solid #555C6D",
           px: "1.5em",
           py: "0.8em",
@@ -82,9 +77,9 @@ export const Header = () => {
               />
             </Flex>
           </Flex>
+
           <Features />   
           
-
           <Flex justifyContent={"flex-end"}>
             <Flex
               display={{

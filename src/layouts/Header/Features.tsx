@@ -1,4 +1,4 @@
-import { Flex, SimpleGrid } from "@chakra-ui/react";
+import { Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -45,27 +45,35 @@ export const Features = () => {
   const router = useRouter();
   return (
     <SimpleGrid
-      columns={[7]}
+      columns={7} // Use a number, not an array
       color="text.primary"
       fontWeight={500}
       display={{
         xs: "none",
         xl: "grid",
       }}
-      className="ml-[-100px]"
     >
+      <Flex
+        align="center"
+        justify="center"
+        className="gap-4"
+      >
       {features.map((e) => (
-        <Link href={e.path} key={e.name} target={e.isExternal ? "_blank" : ""} >
-          <Flex
-            color={router?.asPath === e.path ? "#1ED760" : ""}
-            alignItems={"center"}
-            justifyContent={"center"}
-            
+        <Link href={e.path} key={e.name} target={e.isExternal ? "_blank" : ""}>
+          <Text
+            as="span"
+            color={router?.asPath === e.path ? "green.500" : "white"}
+            fontWeight={router?.asPath === e.path ? "bold" : "normal"}
+            cursor="pointer"
+            transition="color 0.2s"
+            _hover={{ color: "green.400" }}
+            textAlign="center"
           >
             {e.name}
-          </Flex>
+          </Text>
         </Link>
       ))}
+      </Flex>
     </SimpleGrid>
   );
 };
